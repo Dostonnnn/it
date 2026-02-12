@@ -1,0 +1,54 @@
+.intro {
+  width: 100%;
+  padding: 50px 100px;
+  @include flex(column);
+  gap: 30px;
+  &-title {
+    font-size: 30px;
+    color: $blue2;
+    text-align: center;
+  }
+  &-subtitle {
+    font-size: 16px;
+    color: $grey;
+    font-weight: 400;
+  }
+  &-btn {
+    @include btn(180px, 35px);
+  }
+  &-imgs {
+    width: 100%;
+    height: auto;
+    @include flex(row);
+
+    &-img {
+      width: 200px;
+      height: 200px;
+      &:nth-child(1) {
+        height: 400px;
+        width: 400px;
+      }
+      &:nth-child(2) {
+        margin-left: -150px;
+      }
+      &:nth-child(5) {
+        margin-left: -100px;
+      }
+      &:nth-child(4) {
+        width: 400px;
+        margin-left: -100px;
+      }
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .intro {
+    width: 100%;
+    padding: 30px 30px;
+    &-imgs {
+      height: auto;
+      @include flex(column);
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.box {
+  width: 1400px;
+  margin: auto;
+  background: $white;
+}
+
+@media (max-width: 1400px) {
+  .box {
+    width: 100%;
+    margin: auto;
+  }
+}
