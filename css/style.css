@@ -314,13 +314,13 @@ ul {
     margin: 50px 0px;
   }
   .biznes-videos-video:nth-child(1) {
-    max-width: 450px;
-    min-width: 450px;
+    max-width: 420px;
+    min-width: 420px;
   }
   .biznes-videos-video:nth-child(2) {
     width: 100%;
     max-width: 650px;
-    min-width: 450px;
+    min-width: 420px;
   }
 }
 .kamera {
