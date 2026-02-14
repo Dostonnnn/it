@@ -1,7 +1,6 @@
 .navbar {
-  width: 100%;
-  height: auto;
-  left: 10%;
+  width: 1400px;
+  margin: auto;
   padding: 20px 100px;
   @include flex(row);
   background: $whitesmoke;
@@ -31,7 +30,6 @@
     }
   }
 }
-
 @media (max-width: 1400px) {
   .navbar {
     padding: 30px 30px;

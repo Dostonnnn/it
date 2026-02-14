@@ -1,0 +1,142 @@
+.kamera {
+  position: relative;
+  @include flex(column);
+  padding: 50px 100px;
+  gap: 30px;
+  background: linear-gradient(
+    #000128 20%,
+    #1d012c 40%,
+    #000128 60%,
+    #1d012c 100%
+  );
+  &-abs {
+    position: absolute;
+    top: -40px;
+    width: 400px;
+    height: 80px;
+    border-radius: 10px;
+    padding: 0px 25px;
+    background: linear-gradient(#021537 25%, #29013d 60%);
+    @include flex(row);
+    &-int {
+      background: transparent;
+      width: 150px;
+      height: 35px;
+      outline: none;
+      border: none;
+      border-radius: 20px;
+      padding: 0px 15px;
+      transition: all 0.3s linear;
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.12);
+      color: #c8c1f1;
+      opacity: 0.4;
+      &:hover {
+        opacity: 1;
+      }
+      &:active {
+        outline: 2px solid #c8c1f1;
+      }
+    }
+    &-btn {
+      width: 150px;
+      height: 35px;
+      background: #00c5de;
+      border: none;
+      box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.12);
+      border-radius: 20px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #ffffff;
+      transition: all 0.3s linear;
+      &:hover {
+        background: transparent;
+        border: 2px solid #00c5de;
+        color: #00c5de;
+      }
+      &:active {
+        background: $blue3;
+        border: none;
+        color: #ffffff;
+      }
+    }
+  }
+  &-title {
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 77px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 50px;
+  }
+  &-kameras {
+    @include flex(column);
+    gap: 100px;
+    &-box {
+      @include flex(row);
+      justify-content: space-evenly;
+      &-area {
+        @include flex(column);
+        width: 40%;
+      }
+      &-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 37px;
+        align-self: start;
+        color: #ffffff;
+      }
+      &-text {
+        font-style: normal;
+        font-weight: 350;
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+      }
+    }
+    &-box:nth-child(2n) {
+      @include flex(row-reverse);
+      justify-content: space-evenly;
+    }
+    &-box img {
+      width: 150px;
+      height: 200px;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .kamera {
+    width: 100%;
+    padding: 50px 20px;
+    &-title {
+      width: 90%;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    &-kameras {
+      width: 100%;
+      gap: 50px;
+      &-box {
+        width: 100%;
+        &-title {
+          font-size: 18px;
+          line-height: normal;
+        }
+        &-text {
+          font-size: 14px;
+          line-height: normal;
+        }
+      }
+      &-box img {
+        width: 150px;
+        height: 200px;
+      }
+    }
+  }
+}
