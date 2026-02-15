@@ -810,4 +810,17 @@ ul {
   background: transparent;
   border: 2px solid #00c5de;
   color: #00c5de;
+}
+
+@media (max-width: 1400px) {
+  .input {
+    width: 100%;
+    padding: 30px 0px;
+  }
+  .input-title {
+    line-height: normal;
+  }
+  .input-area {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
