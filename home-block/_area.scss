@@ -1,0 +1,32 @@
+.area {
+  padding: 50px 100px;
+  &-title {
+    width: 100%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #364c76;
+  }
+  &-text {
+    width: 60%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #364c76;
+    margin: 30px auto;
+  }
+}
+
+@media (max-width: 1400px) {
+  .area {
+    padding: 30px 0px;
+    &-text {
+      width: 100%;
+      padding: 10px 10px;
+    }
+  }
+}

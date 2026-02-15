@@ -1,0 +1,32 @@
+.ques {
+  @include flex(column);
+  gap: 30px;
+  background-color: #000130;
+  padding: 150px 100px;
+  &-title {
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #ffffff;
+  }
+  &-1 {
+    border: 2px solid white;
+    color: white;
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 60%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .ques {
+    padding: 30px 15px;
+    &-1 {
+      width: 100%;
+    }
+  }
+}
